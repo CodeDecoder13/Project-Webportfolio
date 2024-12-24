@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background via-background to-background/50">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ const Hero = () => {
           transition={{ delay: 0.4 }}
           className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
         >
-          Hi, I'm Rhuzzel Paramio 👋
+          Hi, I'm Rhuzzel Paramio 
         </motion.h1>
 
         <motion.p 
@@ -40,7 +40,7 @@ const Hero = () => {
           transition={{ delay: 0.6 }}
           className="text-xl text-gray-400 mb-8"
         >
-          4th-year BSCSSE student at FEU Tech
+          A Conspiring Software Engineer and Sofware QA Engineer
         </motion.p>
 
         <motion.p 
@@ -74,7 +74,7 @@ const Hero = () => {
           </a>
         </motion.div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 
