@@ -74,15 +74,7 @@ const About = () => {
                 Beyond academics, I am an former student leader, having served as Public Relations and Logistics Officer for the FEU Tech Student Coordinating Council and as Director of Logistics for the Junior Philippine Computer Society – FEU Tech Chapter. These experiences have honed my communication, event planning, and team collaboration skills.
               </motion.p>
 
-              <motion.p
-                variants={paragraphVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                className="text-gray-300"
-              >
-                In addition to my leadership pursuits, I am an avid learner, consistently updating my knowledge through certifications in Python, Cybersecurity, and Generative AI. I take pride in contributing to projects that make a meaningful impact and aspire to leverage my skills and experience to excel in the tech industry.
-              </motion.p>
+            
             </div>
 
             <motion.div
