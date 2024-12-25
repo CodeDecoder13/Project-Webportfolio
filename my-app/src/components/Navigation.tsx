@@ -45,7 +45,7 @@ const Navigation = () => {
     setIsOpen(false);
   };
 
-  const handleMouseEnter = (index) => {
+  const handleMouseEnter = (index: number): void => {
     setActiveIndex(index);
   };
 
