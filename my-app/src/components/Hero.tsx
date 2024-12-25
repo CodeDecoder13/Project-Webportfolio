@@ -23,7 +23,25 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
             >
-              Hi, I'm Rhuzzel Paramio 
+              <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
+              >
+                Hi, I&apos;m Rhuzzel Paramio 
+              </motion.h1>
+              
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8 }}
+                className="text-gray-300"
+              >
+                Passionate about Computer Science, Software Engineering, Web Development, 
+                and Automation Testing. Experienced with Laravel, Selenium, Python, 
+                JavaScript, and Tailwind CSS.
+              </motion.p>m Rhuzzel Paramio 
             </motion.h1>
 
             <motion.p 
@@ -62,7 +80,7 @@ const Hero = () => {
                 onClick={() => setShowModal(true)}
                 className="px-6 py-3 border border-white/20 hover:border-white/40 text-white rounded-full transition-colors duration-300"
               >
-                Contact Me
+                Let&apos;s Talk About Your Project!
               </button>
             </motion.div>
           </motion.div>

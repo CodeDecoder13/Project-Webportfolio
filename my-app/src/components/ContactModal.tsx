@@ -51,7 +51,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
         exit={{ opacity: 0, scale: 0.9 }}
         className="bg-background/95 backdrop-blur-lg p-8 rounded-2xl border border-white/10 max-w-md w-full m-4"
       >
-        <h2 className="text-2xl font-bold mb-6 text-white">Let's Connect!</h2>
+        <h2 className="text-2xl font-bold mb-6 text-white">Let&apos;s Connect!</h2>
         <div className="grid grid-cols-2 gap-4">
           {socials.map((social) => (
             <a
