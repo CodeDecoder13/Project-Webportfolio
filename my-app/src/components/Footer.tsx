@@ -9,12 +9,12 @@ const Footer = () => {
     {
       name: 'LinkedIn',
       icon: <FaLinkedin size={20} />,
-      url: 'https://linkedin.com/in/yourprofile',
+      url: 'https://www.linkedin.com/in/rhuzz-6904b7187/',
     },
     {
       name: 'GitHub',
       icon: <FaGithub size={20} />,
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/CodeDecoder13',
     },
   ];
 
@@ -56,7 +56,7 @@ const Footer = () => {
           >
             <h3 className="text-xl font-bold text-white">Rhuzzel Paramio</h3>
             <p className="text-gray-400 text-sm">
-              Software Engineer specializing in web development and quality assurance.
+              Software Engineer specializing in web development and Software Quality Assurance Engineering.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link) => (

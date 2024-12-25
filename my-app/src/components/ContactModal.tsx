@@ -20,19 +20,19 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
     {
       name: 'Instagram',
       icon: <FaInstagram size={24} />,
-      url: 'https://instagram.com/yourusername',
+      url: 'https://www.instagram.com/its.not.rhuzz/',
       color: 'hover:text-pink-500'
     },
     {
       name: 'LinkedIn',
       icon: <FaLinkedin size={24} />,
-      url: 'https://linkedin.com/in/yourusername',
+      url: 'https://www.linkedin.com/in/rhuzz-6904b7187/',
       color: 'hover:text-blue-500'
     },
     {
       name: 'Facebook',
       icon: <FaFacebook size={24} />,
-      url: 'https://facebook.com/yourusername',
+      url: 'https://www.facebook.com/rhuzz.paramio/',
       color: 'hover:text-blue-600'
     },
     {

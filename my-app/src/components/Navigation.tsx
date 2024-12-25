@@ -8,13 +8,16 @@ import ContactModal from './ContactModal';
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const menuItems = [
-    { name: 'Home', href: '/#home' },
+    { name: 'Home', href: '/' },
     { name: 'Projects', href: '/#projects' },
     { name: 'About', href: '/#about' },
     { name: 'Skills & Achievements', href: '/#skills' },
+    { name: 'Leadership', href: '/#leadership' },
     { name: 'Testimonials', href: '/#testimonials' },
+  
   ];
 
   const handleDownload = async () => {
@@ -23,19 +26,27 @@ const Navigation = () => {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    const targetId = href.replace('/#', '');
-    const element = document.getElementById(targetId);
-    if (element) {
-      const offset = 80; // Height of the fixed navbar plus some padding
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
+    if (href === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const targetId = href.replace('/#', '');
+      const element = document.getElementById(targetId);
+      if (element) {
+        const offset = 80; // Height of the fixed navbar plus some padding
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
     }
     setIsOpen(false);
+  };
+
+  const handleMouseEnter = (index) => {
+    setActiveIndex(index);
   };
 
   return (
@@ -45,24 +56,29 @@ const Navigation = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link 
-              href="/#home"
-              onClick={(e) => handleNavClick(e, '/#home')}
+              href="/"
+              onClick={(e) => handleNavClick(e, '/')}
               className="text-xl font-bold text-white hover:text-primary transition-colors"
             >
-              RP
+              Rhuzzel Paramio
             </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              {menuItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  onClick={(e) => handleNavClick(e, item.href)}
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  {item.name}
-                </Link>
+              {menuItems.map((item, index) => (
+                <div key={item.name} onMouseEnter={() => handleMouseEnter(index)}>
+                  <Link
+                    href={item.href}
+                    onClick={(e) => handleNavClick(e, item.href)}
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                  {/* Indicator Line */}
+                  {activeIndex === index && (
+                    <div className="h-1 bg-primary rounded transition-all duration-300" style={{ width: '100%' }} />
+                  )}
+                </div>
               ))}
               
               {/* Contact Button */}
@@ -105,15 +121,20 @@ const Navigation = () => {
               className="md:hidden border-t border-white/10"
             >
               <div className="px-4 py-4 space-y-4">
-                {menuItems.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    onClick={(e) => handleNavClick(e, item.href)}
-                    className="block text-gray-300 hover:text-white transition-colors"
-                  >
-                    {item.name}
-                  </Link>
+                {menuItems.map((item, index) => (
+                  <div key={item.name} onMouseEnter={() => handleMouseEnter(index)}>
+                    <Link
+                      href={item.href}
+                      onClick={(e) => handleNavClick(e, item.href)}
+                      className="block text-gray-300 hover:text-white transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                    {/* Indicator Line */}
+                    {activeIndex === index && (
+                      <div className="h-1 bg-primary rounded transition-all duration-300" style={{ width: '100%' }} />
+                    )}
+                  </div>
                 ))}
                 
                 <button

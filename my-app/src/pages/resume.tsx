@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaCertificate, FaGraduationCap, FaDownload, FaHome } from 'react-icons/fa';
+import { FaBriefcase, FaCertificate, FaGraduationCap, FaDownload, FaArrowLeft } from 'react-icons/fa';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 
@@ -23,21 +23,21 @@ const Resume = () => {
 
   const experience = [
     {
-      title: "Software QA Engineer",
-      company: "Multisys Technologies Corporation",
-      duration: "March 2023 - Present",
+      title: "Intern - Software QA Engineer",
+      company: "Reed Elsevier Philippines",
+      duration: "December 2023 - July 2024",
       description: [
         "Developed and executed comprehensive test plans and test cases for web applications",
-        "Performed manual and automated testing using Selenium WebDriver and Python",
+        "Performed manual and automated testing using Selenium WebDriver and Playwright",
         "Conducted functional, regression, and performance testing",
         "Collaborated with developers to resolve identified issues and improve product quality",
         "Documented and tracked software defects using Azure DevOps"
       ]
     },
     {
-      title: "Software Developer",
-      company: "Multisys Technologies Corporation",
-      duration: "March 2023 - Present",
+      title: "Junior Software Engineer",
+      company: "Upwork",
+      duration: "September 2023 - February 2024",
       description: [
         "Developed and maintained web applications using Laravel, PHP, and JavaScript",
         "Implemented responsive designs using Tailwind CSS and modern UI/UX principles",
@@ -65,23 +65,54 @@ const Resume = () => {
       issuer: "Cisco",
       date: "2023",
       description: "Foundation in cybersecurity principles and best practices"
-    }
+    },
+    {
+      name: "Introduction to Data Science",
+      issuer: "Cisco",
+      date: "2024",
+      description: "Comprehensive understanding of data science principles and applications"
+    },
+    {
+      name: "Devnet Associate",
+      issuer: "Cisco",
+      date: "2022",
+      description: "Demonstrated fundamental knowledge of networking, automation, and DevOps skills"
+    },
+    {
+      name: "Devnet Associate",
+      issuer: "Cisco",
+      date: "2022",
+      description: "Demonstrated fundamental knowledge of networking, automation, and DevOps skills"
+    },
   ];
 
   const education = {
-    degree: "Bachelor of Science in Information Technology",
-    school: "STI College Global City",
-    duration: "2019 - 2023",
+    degree: "Bachelor of Science in Computer Science Specialize in Software Engineering",
+    school: "FEU Institute of Technology",
+    duration: "2020 - 2025",
     achievements: [
-      "Dean's Lister",
-      "Academic Excellence Award",
-      "Best in Thesis Award"
+      "Active Student Leader for excutive 2 years",
+      "Best in Category Captone Award"
     ]
   };
 
   return (
     <div className="min-h-screen bg-background">
-      <main>
+      <div className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex justify-between items-center">
+            <Link 
+              href="/"
+              className="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-primary/20 rounded-lg text-white transition-all group"
+            >
+              <FaArrowLeft className="text-primary group-hover:translate-x-[-4px] transition-transform" />
+              <span className="font-medium">Back to Portfolio</span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <main className="pt-24">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -89,21 +120,9 @@ const Resume = () => {
           className="bg-gradient-to-b from-background to-background/50 py-16"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-start">
               <div>
-                <div className="flex items-center gap-4 mb-4">
-                  <Link 
-                    href="/#home"
-                    className="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-primary/20 rounded-lg text-white transition-all group relative"
-                  >
-                    <FaHome className="text-xl text-primary group-hover:scale-110 transition-transform" />
-                    <span className="font-medium">Back to Home</span>
-                    <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-sm py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                      Return to main page
-                    </span>
-                  </Link>
-                  <h1 className="text-4xl font-bold text-white">Professional Resume</h1>
-                </div>
+                <h1 className="text-4xl font-bold text-white mb-4">Professional Resume</h1>
                 <p className="text-gray-400 max-w-2xl">
                   A detailed overview of my professional experience, certifications, and educational background
                   in software development and quality assurance.

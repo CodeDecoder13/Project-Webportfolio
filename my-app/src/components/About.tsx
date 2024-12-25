@@ -51,7 +51,7 @@ const About = () => {
                 viewport={{ once: true }}
                 className="text-gray-300"
               >
-                I am Rhuzzel Paramio, a 4th-year BSCSSE student at FEU Tech, specializing in Software Engineering. I am a highly dependable and organized individual, known for my positive attitude and commitment to excellence. My experience spans web development, quality assurance, and leadership roles, where I consistently demonstrate my ability to manage multiple priorities in fast-paced environments effectively.
+                I am Rhuzzel Paramio, a BSCSSE student at FEU Tech, specializing in Software Engineering. I am a highly dependable and organized individual, known for my positive attitude and commitment to excellence. My experience spans web development, quality assurance, and leadership roles, where I consistently demonstrate my ability to manage multiple priorities in fast-paced environments effectively.
               </motion.p>
 
               <motion.p
@@ -61,7 +61,7 @@ const About = () => {
                 viewport={{ once: true }}
                 className="text-gray-300"
               >
-                With hands-on expertise in modern technologies such as Next.js, Laravel, Selenium with C#, and cloud solutions like Azure DevOps, I am passionate about building efficient, scalable, and user-centric software. My technical skills are complemented by strong problem-solving abilities, time management, and an unwavering focus on detail.
+                With hands-on expertise in modern technologies such as Next.js, Laravel, Selenium with C#, and cloud solutions like Azure DevOps, I am passionate about building efficient, scalable, and user-centric software. I have hands-on experience with automation testing and manual testing methodologies, ensuring software quality and reliability. Additionally, I am proficient in using Git for version control, enabling effective collaboration and code management. My technical skills are complemented by strong problem-solving abilities, time management, and an unwavering focus on detail.
               </motion.p>
 
               <motion.p
@@ -71,7 +71,7 @@ const About = () => {
                 viewport={{ once: true }}
                 className="text-gray-300"
               >
-                Beyond academics, I am an active student leader, having served as Public Relations and Logistics Officer for the FEU Tech Student Coordinating Council and as Director of Logistics for the Junior Philippine Computer Society – FEU Tech Chapter. These experiences have honed my communication, event planning, and team collaboration skills.
+                Beyond academics, I am an former student leader, having served as Public Relations and Logistics Officer for the FEU Tech Student Coordinating Council and as Director of Logistics for the Junior Philippine Computer Society – FEU Tech Chapter. These experiences have honed my communication, event planning, and team collaboration skills.
               </motion.p>
 
               <motion.p
