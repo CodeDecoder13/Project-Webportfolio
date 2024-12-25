@@ -32,12 +32,6 @@ const Projects = () => {
       imageUrl: '/projects/project0.png'
     },
     {
-      title: 'iTam_Portal_for_Invitational_Sportfests',
-      description: 'Description of your second project',
-      technologies: ['PHP', 'Laravel','Taiwlind CSS','PostgreSQL'],
-      imageUrl: '/projects/project2.jpg'
-    },
-    {
       title: 'Compliment Generator',
       description: 'This is a Complement Generator simple, interactive website where she can select her current mood by clicking an emoji or a descriptive text (e.g., "Happy 😊" or "Feeling Down 😔"). After selecting, a dialog box or modal appears with a heartfelt compliment or encouraging message tailored to that mood.',
       technologies: ['Nest.js', 'Tailwind CSS', 'Framer Motion'],
