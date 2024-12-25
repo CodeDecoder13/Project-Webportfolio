@@ -21,34 +21,23 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
+              className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
             >
               <motion.h1 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
+                className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
               >
                 Hi, I&apos;m Rhuzzel Paramio 
               </motion.h1>
-              
-              <motion.p 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8 }}
-                className="text-gray-300"
-              >
-                Passionate about Computer Science, Software Engineering, Web Development, 
-                and Automation Testing. Experienced with Laravel, Selenium, Python, 
-                JavaScript, and Tailwind CSS.
-              </motion.p>m Rhuzzel Paramio 
             </motion.h1>
 
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="text-xl text-gray-400"
+              className="text-lg text-gray-400"
             >
               A Conspiring Software Engineer and Software QA Engineer
             </motion.p>
@@ -57,7 +46,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="text-gray-300"
+              className="text-lg text-gray-300"
             >
               Passionate about Computer Science, Software Engineering, Web Development, 
               and Automation Testing. Experienced with Laravel, Selenium, Python, 
