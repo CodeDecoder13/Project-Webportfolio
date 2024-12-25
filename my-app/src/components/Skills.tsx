@@ -115,7 +115,7 @@ const Skills = () => {
               <div className="grid grid-cols-2 gap-2">
                 {skills.languages.map((skill) => (
                   <span
-                    key={skill}
+                    key={Math.random()}
                     className="px-3 py-1.5 bg-white/5 rounded-lg text-gray-300 text-sm hover:bg-white/10 transition-colors"
                   >
                     {skill}
@@ -132,7 +132,7 @@ const Skills = () => {
               <div className="grid grid-cols-2 gap-2">
                 {skills.frameworks.map((skill) => (
                   <span
-                    key={skill}
+                    key={Math.random()}
                     className="px-3 py-1.5 bg-white/5 rounded-lg text-gray-300 text-sm hover:bg-white/10 transition-colors"
                   >
                     {skill}
@@ -149,7 +149,7 @@ const Skills = () => {
               <div className="grid grid-cols-2 gap-2">
                 {skills.databases.map((skill) => (
                   <span
-                    key={skill}
+                    key={Math.random()}
                     className="px-3 py-1.5 bg-white/5 rounded-lg text-gray-300 text-sm hover:bg-white/10 transition-colors"
                   >
                     {skill}
@@ -166,7 +166,7 @@ const Skills = () => {
               <div className="grid grid-cols-2 gap-2">
                 {skills.tools.map((skill) => (
                   <span
-                    key={skill}
+                    key={Math.random()}
                     className="px-3 py-1.5 bg-white/5 rounded-lg text-gray-300 text-sm hover:bg-white/10 transition-colors"
                   >
                     {skill}
@@ -191,7 +191,7 @@ const Skills = () => {
             
             {certifications.map((cert, index) => (
               <motion.div
-                key={cert.name}
+                key={index}
                 variants={itemVariants}
                 className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors border border-white/10"
               >

@@ -54,7 +54,7 @@ const Projects = () => {
     },
     {
       title: 'Project_Rhuzz 1 Ver Webportfolio',
-      description: 'Description of your fifth project',
+      description: 'This project is John&#39;s favorite.',
       technologies: ['Html/Css', 'Native CSS', ''],
       imageUrl: '/projects/project5.png',
       githubUrl: 'https://github.com/CodeDecoder13/Project_Rhuzz',
@@ -73,7 +73,7 @@ const Projects = () => {
         >
           <h2 className="text-4xl font-bold text-white mb-6">Projects</h2>
           <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-            Here are some of the projects I've worked on. Each project represents a unique challenge and learning experience.
+            Here are some of the projects I&apos;ve worked on. Each project represents a unique challenge and learning experience.
           </p>
         </motion.div>
 
