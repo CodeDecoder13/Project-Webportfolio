@@ -49,8 +49,7 @@ const Hero = () => {
               className="text-lg text-gray-300"
             >
               Passionate about Computer Science, Software Engineering, Web Development, 
-              and Automation Testing. Experienced with Laravel, Selenium, Python, 
-              JavaScript, and Tailwind CSS.
+              and Automation Testing.
             </motion.p>
 
             <motion.div 

@@ -29,13 +29,7 @@ const Projects = () => {
       title: 'Indoor Air Quality Monitoring and Recommnedation System',
       description: 'a Project created by Collaborating with a team of 4 members for the Capstone Project',
       technologies: ['Flutter', 'FastApi', 'MySql', 'Python','Php'],
-      imageUrl: '/projects/project1.jpg'
-    },
-    {
-      title: 'iTam_Portal_for_Invitational_Sportfests',
-      description: 'Description of your second project',
-      technologies: ['PHP', 'Laravel','Taiwlind CSS','PostgreSQL'],
-      imageUrl: '/projects/project2.jpg'
+      imageUrl: '/projects/project0.png'
     },
     {
       title: 'Compliment Generator',
