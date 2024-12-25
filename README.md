@@ -37,7 +37,7 @@ Follow these steps to set up the project locally:
 ## Technologies Used
 - **Next.js**: Framework for server-side rendering and static site generation.
 - **React**: Library for building user interfaces.
-- **CSS/SCSS/Tailwind CSS**: For styling the application (add specific choice).
+- **Tailwind CSS**: For styling the application (add specific choice).
 - **Node.js**: Runtime environment for building server-side applications.
 - **Other Tools**: Add any additional tools or libraries used.
 
@@ -62,6 +62,6 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 ## Contact
 For questions or suggestions, feel free to reach out:
 - **Name**: Rhuzzel Paramio
-- **Email**: [boyparmaio@gmail.com]
+- **Email**: [boyparamio@gmail.com]
 - **LinkedIn**: [https://www.linkedin.com/in/rhuzz-6904b7187/]
 
