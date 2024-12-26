@@ -33,7 +33,7 @@ const Projects = () => {
     },
     {
       title: 'Compliment Generator',
-      description: 'This is a Complement Generator simple, interactive website where she can select her current mood by clicking an emoji or a descriptive text (e.g., "Happy 😊" or "Feeling Down 😔"). After selecting, a dialog box or modal appears with a heartfelt compliment or encouraging message tailored to that mood.',
+      description: 'This is a Complement Generator simple, interactive website where users can select there current mood by clicking an emoji or a descriptive text (e.g., "Happy 😊" or "Feeling Down 😔"). After selecting, a dialog box or modal appears with a heartfelt compliment or encouraging message tailored to that mood.',
       technologies: ['Nest.js', 'Tailwind CSS', 'Framer Motion'],
       imageUrl: '/projects/project3.png',
       githubUrl: 'https://github.com/CodeDecoder13/ComplimentGenerator.git',

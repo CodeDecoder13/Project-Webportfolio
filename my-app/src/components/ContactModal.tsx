@@ -35,12 +35,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
       url: 'https://www.facebook.com/rhuzz.paramio/',
       color: 'hover:text-blue-600'
     },
-    {
-      name: 'Book a Zoom',
-      icon: <FaVideo size={24} />,
-      url: 'https://calendly.com/yourusername',
-      color: 'hover:text-blue-400'
-    }
+    
   ];
 
   return (
