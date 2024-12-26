@@ -1,4 +1,4 @@
-import { FaInstagram, FaLinkedin, FaFacebook, FaVideo } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
