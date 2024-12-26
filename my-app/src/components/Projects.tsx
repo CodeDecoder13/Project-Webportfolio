@@ -28,13 +28,13 @@ const Projects = () => {
     {
       title: 'Indoor Air Quality Monitoring and Recommnedation System',
       description: 'a Project created by Collaborating with a team of 4 members for the Capstone Project',
-      technologies: ['Flutter', 'FastApi', 'MySql', 'Python','Php'],
+      technologies: ['Flutter', 'FastApi', 'MySql', 'Python','Php','KNN','Scikit-learn'],
       imageUrl: '/projects/project0.png'
     },
     {
       title: 'Compliment Generator',
       description: 'This is a Complement Generator simple, interactive website where users can select there current mood by clicking an emoji or a descriptive text (e.g., "Happy 😊" or "Feeling Down 😔"). After selecting, a dialog box or modal appears with a heartfelt compliment or encouraging message tailored to that mood.',
-      technologies: ['Nest.js', 'Tailwind CSS', 'Framer Motion'],
+      technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion','TypeScript'],
       imageUrl: '/projects/project3.png',
       githubUrl: 'https://github.com/CodeDecoder13/ComplimentGenerator.git',
       liveUrl: 'https://compliment-generator-v1.vercel.app'
@@ -49,7 +49,7 @@ const Projects = () => {
     {
       title: 'Project_Rhuzz 1 Ver Webportfolio',
       description: 'This project is John&#39;s favorite.',
-      technologies: ['Html/Css', 'Native CSS', ''],
+      technologies: ['Html/Css', 'Javascript', 'CSS'],
       imageUrl: '/projects/project5.png',
       githubUrl: 'https://github.com/CodeDecoder13/Project_Rhuzz',
       liveUrl: 'https://project-rhuzz.vercel.app'
