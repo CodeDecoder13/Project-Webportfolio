@@ -47,8 +47,8 @@ const Projects = () => {
       githubUrl: 'https://github.com/CodeDecoder13/Selenium-V.2.git'
     },
     {
-      title: 'Project_Rhuzz 1 Ver Webportfolio',
-      description: 'This project is John&#39;s favorite.',
+      title: 'Project Rhuzz 1 Ver Webportfolio',
+      description: 'This is a version 1 of my web portfolio using Html, Css, and Javascript.',
       technologies: ['Html/Css', 'Javascript', 'CSS'],
       imageUrl: '/projects/project5.png',
       githubUrl: 'https://github.com/CodeDecoder13/Project_Rhuzz',
