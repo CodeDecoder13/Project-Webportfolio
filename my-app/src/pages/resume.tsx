@@ -78,12 +78,6 @@ const Resume = () => {
       date: "2022",
       description: "Demonstrated fundamental knowledge of networking, automation, and DevOps skills"
     },
-    {
-      name: "Devnet Associate",
-      issuer: "Cisco",
-      date: "2022",
-      description: "Demonstrated fundamental knowledge of networking, automation, and DevOps skills"
-    },
   ];
 
   const education = {
@@ -91,8 +85,8 @@ const Resume = () => {
     school: "FEU Institute of Technology",
     duration: "2020 - 2025",
     achievements: [
-      "Active Student Leader for excutive 2 years",
-      "Best in Category Captone Award"
+      "Active Student Leader for executive 2 years",
+      "Best in Category Capstone Award"
     ]
   };
 
