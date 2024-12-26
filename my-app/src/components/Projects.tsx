@@ -41,7 +41,7 @@ const Projects = () => {
     },
     {
       title: 'Selenium-V.2',
-      description: 'This is a version 2 of my selenium using c# as programming laguage, to create a automation testing with the feature of Ui Testing, Responsive Testing, Perfomance Testing with c# native.',
+      description: 'This is a version 2 of my open source selenium project using c# to create a automation testing with the feature of Ui Testing, Responsive Testing, Perfomance Testing with c# native.',
       technologies: ['C#', 'C# native'],
       imageUrl: '/projects/project4.png',
       githubUrl: 'https://github.com/CodeDecoder13/Selenium-V.2.git'
