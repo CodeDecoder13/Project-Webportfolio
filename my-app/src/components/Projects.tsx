@@ -27,8 +27,8 @@ const Projects = () => {
   const projects = [
     {
       title: 'Indoor Air Quality Monitoring and Recommnedation System',
-      description: 'a Project created by Collaborating with a team of 4 members for the Capstone Project',
-      technologies: ['Flutter', 'FastApi', 'MySql', 'Python','Php','KNN','Scikit-learn'],
+      description: 'a Capstone Project created by Collaborating with a team of 5 Computer Science Students to develop an Indoor Air Quality Monitoring and Recommending System for the Capstone Project',
+      technologies: ['Flutter', 'FastApi', 'MySql', 'Python','Php','KNN','Scikit-learn','Machine Learning'],
       imageUrl: '/projects/project0.png'
     },
     {
