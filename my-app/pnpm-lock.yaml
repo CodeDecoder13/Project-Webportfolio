@@ -11,9 +11,6 @@ importers:
       '@geist-ui/core':
         specifier: ^2.3.8
         version: 2.3.8(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@next/font':
-        specifier: ^14.2.15
-        version: 14.2.15(next@15.1.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
       '@supabase/supabase-js':
         specifier: ^2.47.10
         version: 2.47.10
@@ -272,11 +269,6 @@ packages:
 
   '@next/eslint-plugin-next@15.1.1':
     resolution: {integrity: sha512-yACipsS2HI9ktcfz/1UsO0/sDbVjXWKDE/fzzMLnYES+K4KJyqHChyBQeaxiK7/NDnxrdk7Ow2i9LRm3ZTAWow==}
-
-  '@next/font@14.2.15':
-    resolution: {integrity: sha512-QopYhBmCDDrNDynbi+ZD1hDZXmQXVFo7TmAFp4DQgO/kogz1OLbQ92hPigJbj572eZ3GaaVxNIyYVn3/eAsehg==}
-    peerDependencies:
-      next: '*'
 
   '@next/swc-darwin-arm64@15.1.1':
     resolution: {integrity: sha512-pq7Hzu0KaaH6UYcCQ22mOuj2mWCD6iqGvYprp/Ep1EcCxbdNOSS+8EJADFbPHsaXLkaonIJ8lTKBGWXaFxkeNQ==}
@@ -1955,10 +1947,6 @@ snapshots:
   '@next/eslint-plugin-next@15.1.1':
     dependencies:
       fast-glob: 3.3.1
-
-  '@next/font@14.2.15(next@15.1.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0))':
-    dependencies:
-      next: 15.1.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
 
   '@next/swc-darwin-arm64@15.1.1':
     optional: true

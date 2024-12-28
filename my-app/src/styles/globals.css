@@ -28,3 +28,30 @@ body {
 * {
   @apply transition-colors duration-200;
 }
+
+/* Testimonials scroll animation */
+.testimonials-scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonials-scroll {
+  display: flex;
+  animation: scroll 60s linear infinite;
+  width: max-content;
+  padding: 1rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.testimonials-scroll:hover {
+  animation-play-state: paused;
+}
