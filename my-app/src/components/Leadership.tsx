@@ -49,6 +49,15 @@ const Leadership = () => {
     // YMCA Images
     { src: '/pictures/ymca/ymca1.jpg', alt: 'YMCA Event 1', category: 'YMCA' },
     { src: '/pictures/ymca/ymca2.jpg', alt: 'YMCA Event 2', category: 'YMCA' },
+
+    //thesis Images
+    { src: '/pictures/thesis/thesis1.jpg', alt: 'Thesis Event 1', category: 'Thesis' },
+    { src: '/pictures/thesis/thesis2.jpg', alt: 'Thesis Event 2', category: 'Thesis' },
+    { src: '/pictures/thesis/thesis4.jpg', alt: 'Thesis Event 4', category: 'Thesis' },
+    { src: '/pictures/thesis/thesis5.jpg', alt: 'Thesis Event 5', category: 'Thesis' },
+    { src: '/pictures/thesis/thesis6.jpg', alt: 'Thesis Event 6', category: 'Thesis' },
+    { src: '/pictures/thesis/thesis7.jpg', alt: 'Thesis Event 7', category: 'Thesis' },
+    { src: '/pictures/thesis/thesis8.jpg', alt: 'Thesis Event 8', category: 'Thesis' },
   ];
 
   // Function to chunk array into rows
