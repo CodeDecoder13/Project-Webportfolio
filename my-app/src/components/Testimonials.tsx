@@ -108,17 +108,17 @@ const Testimonials = () => {
               <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-white"></div>
             </div>
           ) : (
-            <div className="flex gap-8">
+            <div className="flex gap-4 sm:gap-6 md:gap-8">
               {[...testimonials, ...testimonials].map((testimonial, index) => (
                 <div
                   key={`${testimonial.id}-${index}`}
-                  className="flex-shrink-0 max-w-[500px] min-w-[300px] bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:bg-white/10 transition-all duration-300"
+                  className="flex-shrink-0 w-[calc(100vw-4rem)] sm:w-80 md:w-96 bg-white/5 p-4 sm:p-6 rounded-lg shadow-lg border border-white/10 hover:bg-white/10 transition-all duration-300 flex flex-col"
                 >
-                  <p className="text-gray-300 mb-4 text-base leading-relaxed">{testimonial.message}</p>
+                  <p className="text-gray-300 mb-4 text-sm sm:text-base leading-relaxed overflow-y-auto max-h-40 pr-2 custom-scrollbar">{testimonial.message}</p>
                   <div className="flex items-center justify-between mt-4">
                     <div>
-                      <h4 className="text-white font-medium">{testimonial.name}</h4>
-                      <p className="text-gray-400 text-sm">{testimonial.role}</p>
+                      <h4 className="text-white font-medium text-sm sm:text-base">{testimonial.name}</h4>
+                      <p className="text-gray-400 text-xs sm:text-sm">{testimonial.role}</p>
                     </div>
                     {testimonial.linkedin_url && (
                       <a
@@ -127,7 +127,7 @@ const Testimonials = () => {
                         rel="noopener noreferrer"
                         className="text-blue-400 hover:text-blue-300 transition-colors"
                       >
-                        <FaLinkedin size={24} />
+                        <FaLinkedin size={20} className="sm:w-6 sm:h-6" />
                       </a>
                     )}
                   </div>
