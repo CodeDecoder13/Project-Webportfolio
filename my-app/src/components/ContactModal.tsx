@@ -1,4 +1,6 @@
-import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaSignalMessenger } from 'react-icons/fa6';
+import { MdEmail } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
@@ -16,26 +18,26 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
 
   if (!mounted || !isOpen) return null;
 
-  const socials = [
-    {
-      name: 'Instagram',
-      icon: <FaInstagram size={24} />,
-      url: 'https://www.instagram.com/its.not.rhuzz/',
-      color: 'hover:text-pink-500'
-    },
+  const contacts = [
+    
     {
       name: 'LinkedIn',
       icon: <FaLinkedin size={24} />,
-      url: 'https://www.linkedin.com/in/rhuzz-6904b7187/',
+      url: 'https://www.linkedin.com/in/rhuzz-paramio/',
       color: 'hover:text-blue-500'
     },
     {
-      name: 'Facebook',
-      icon: <FaFacebook size={24} />,
-      url: 'https://www.facebook.com/rhuzz.paramio/',
-      color: 'hover:text-blue-600'
+      name: 'Messenger',
+      icon: <FaSignalMessenger size={24} />,
+      url: 'https://m.me/rhuzz.paramio',
+      color: 'hover:text-blue-500'
     },
-    
+    {
+      name: 'Email',
+      icon: <MdEmail size={24} />,
+      url: 'mailto:boyparamio@gmail.com',
+      color: 'hover:text-red-500'
+    }
   ];
 
   return (
@@ -48,16 +50,16 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
       >
         <h2 className="text-2xl font-bold mb-6 text-white">Let&apos;s Connect!</h2>
         <div className="grid grid-cols-2 gap-4">
-          {socials.map((social) => (
+          {contacts.map((contact) => (
             <a
-              key={social.name}
-              href={social.url}
+              key={contact.name}
+              href={contact.url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex items-center gap-3 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors ${social.color}`}
+              className={`flex items-center gap-3 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors ${contact.color}`}
             >
-              {social.icon}
-              <span className="text-white">{social.name}</span>
+              {contact.icon}
+              <span className="text-white">{contact.name}</span>
             </a>
           ))}
         </div>
